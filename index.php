@@ -47,6 +47,7 @@ include_once './header.php';
                 Aralinks QRY
             </div>
             </h2>
+            <p>V 1.0.7</p>
             <form class="ui big form" method="POST" action="<?php $_SERVER['PHP_SELF']; ?>">
                 <div class="ui stacked segment">
                     <div class="field">

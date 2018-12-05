@@ -39,7 +39,7 @@
         }
 
         public function all() {
-            $query = 'SELECT * FROM ' . $this->table . ' WHERE question_id=:question_id';
+            $query = 'SELECT * FROM ' . $this->table . ' WHERE question_id=:question_id ORDER BY value';
             $stmt = $this->conn->prepare($query);
 
             $stmt->bindParam(':question_id', $this->question_id);

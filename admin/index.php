@@ -129,17 +129,32 @@ include_once 'header.php';
                                 }elseif($row['status'] == 1){
                                     echo '<input type="checkbox" name="togglex-' . $row['id'] . '"  checked>';
                                 }
-                         echo '</div>		       
+                    //      echo '</div>		       
+                    //     </td>
+                        
+                    //     <td>
+                    //         <div class="ui circular blue icon bottom left pointing dropdown button" tabindex="0">
+                    //         <i class="options icon"></i>
+                    //         <div class="menu transition hidden" tabindex="-1">
+                    //             <a href="preview.php?id=' . $row['id'] . '" class="item edit-quiz" data-qid="'.$row['id']. '">Preview </a>
+                                				    
+                    //             <div class="item del-quiz" data-qid="'.$row['id']. '">Delete</div>
+                    //             <a href="reset.php?id=' . $row['id'] . '" class="item hide-quiz" data-qid="' . $row['id'] . '" data-viewx="1">Reset Responses</a>	
+                    //         </div>
+                    //         </div>
+                    //     </td>
+                    // </tr>';
+                    echo '</div>		       
                         </td>
                         
                         <td>
                             <div class="ui circular blue icon bottom left pointing dropdown button" tabindex="0">
                             <i class="options icon"></i>
                             <div class="menu transition hidden" tabindex="-1">
-                                <a href="preview.php?id=' . $row['id'] . '" class="item edit-quiz" data-qid="'.$row['id']. '">Preview </a>
+                                <a href="preview.php?id=' . $row['id'] . '" class="item edit-quiz" data-qid="' . $row['id'] . '">Preview </a>
                                 				    
-                                <div class="item del-quiz" data-qid="'.$row['id']. '">Delete</div>
-                                <a href="reset.php?id=' . $row['id'] . '" class="item hide-quiz" data-qid="' . $row['id'] . '" data-viewx="1">Reset Responses</div>	
+                                <div class="item del-quiz" data-qid="' . $row['id'] . '">Delete</div>
+
                             </div>
                             </div>
                         </td>
@@ -172,5 +187,10 @@ include_once 'header.php';
             });
 
         });
+    </script>
+    <script>
+        if ( window.history.replaceState ) {
+            window.history.replaceState( null, null, window.location.href );
+        }
     </script>
 </body

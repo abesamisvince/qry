@@ -1,7 +1,7 @@
 <?php
 class Main
 {
-    private $host = '192.168.1.174';
+    private $host = '192.168.1.175';
     private $db_name = 'qry_db';
     private $username = 'root';
     private $password = 'phoenix927';
