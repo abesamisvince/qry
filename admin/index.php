@@ -193,4 +193,5 @@ include_once 'header.php';
             window.history.replaceState( null, null, window.location.href );
         }
     </script>
-</body
+    
+</body>

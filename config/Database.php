@@ -1,7 +1,7 @@
 <?php
     class Database{
         private $host = 'localhost';
-        private $db_name = 'qry_db';
+        private $db_name = 'qry_db5';
         private $username = 'root';
         private $password = '';
         private $conn;

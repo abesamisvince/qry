@@ -33,7 +33,7 @@ include_once 'header.php';
       $('.ui.dropdown').dropdown();
       $('.menu .item').tab();
       $('.ui.checkbox').checkbox();
-       
+       $('table').tablesort();
     });
 
     
@@ -147,6 +147,8 @@ include_once 'header.php';
                     })
                     </script> -->
                     <?php
+                }elseif($qrow['type_id'] == 6){
+                    echo 'Type!';
                 }
                 ?>
                     

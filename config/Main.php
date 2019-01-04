@@ -1,10 +1,10 @@
 <?php
 class Main
 {
-    private $host = '192.168.1.175';
+    private $host = 'localhost';
     private $db_name = 'qry_db';
     private $username = 'root';
-    private $password = 'phoenix927';
+    private $password = '';
     private $conn;
 
     public function connect()

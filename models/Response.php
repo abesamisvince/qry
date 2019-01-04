@@ -232,4 +232,18 @@
             return false;
         }
 
+        public function all() {
+            $query = 'SELECT * FROM '.$this->table;
+            $stmt = $this->conn->prepare($query);
+
+            $stmt->execute();
+            $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            if($rows){
+                return $rows;
+            }
+
+            return false;
+        }
+
     }

@@ -27,8 +27,9 @@
     <script src="../assets/buttons.html5.min.js"></script>
     <script src="../assets/buttons.colVis.min.js"></script>
     <script src="../assets/hc/highcharts.js"></script>
-<script src="../assets/hc/exporting.js"></script>
-<script src="../assets/hc/export-data.js"></script>
+    <script src="../assets/hc/exporting.js"></script>
+    <script src="../assets/hc/export-data.js"></script>
+    <script src="../assets/jquery.tablesort.min.js"></script>
 
     <style type="text/css">
     body {
